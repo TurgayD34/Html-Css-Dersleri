@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Kullanimi</title>
+</head>
+<body>
+    <form action="#" name="frm1" id="frm1" method="POST"><br><br>
+        <p><input type="text" name="username" id="username" autocomplete="off" placeholder="Kullanici Adini Gir" size="55"></p>
+        <p><input type="password" name="pass" id="pass" maxlength="10" placeholder="Sifrenizi Giriniz" ></p>
+        <p><input type="email" name="email" id="email" placeholder="Email" disabled></p>
+        <p><input type="hidden" value="123456"></p>
+        <p><input type="url" name="url" id="url" placeholder="Url Giriniz"></p>
+        <p><input type="tel" name="tel" id="tel" placeholder="Telefon Numaraniz"></p>
+        <p><input type="search" name="search" id="search" placeholder="Search"></p>
+        <input type="submit" value="send">
+        <input type="button" value="buttom">
+        <input type="reset">
+        <p><textarea name="text" id="txt" cols="30" rows="10"></textarea></p>
+        <p>
+            <label for="">
+                <p><input type="checkbox" value="0" name="check1" id="bay">Bay</p>
+            </label>
+            <label for="">
+                <p><input type="checkbox" value="1" name="check1" id="bayan">Bayan</p>
+            </label>
+            <label for="">
+                <p><input type="checkbox" value="0" name="check1" id="erkek-cocuk">Erkek Cocuk</p>
+            </label>
+            <label for="">
+                <p><input type="checkbox" value="1" name="check1" id="kiz-cocuk">Kiz Cocuk</p>
+            </label>
+        </p>
+        <select name="" id="">
+            <option value="select" selected>Seciniz...</option>
+            <option value="html">Html</option>
+            <option value="css">Css</option>
+            <option value="php">Php</option>
+            <option value="js">Js</option>
+            <option value="java">Java</option>
+        </select>
+
+    </form>
+    <!-- Eger sunucuya form gondermek istedigimiz zaman actiona action="ders.html" ekleyebiliriz veya gondermek istemiyorsak # isareti kullanabiliriz. -->
+    <!-- form da ekledigimiz GET kullanicinin girdigi degerleri arama sonuc bolumunde gorunmesini saglar ama ben onu 
+    POST seklinde girersem kullanicinin girdigi seyleri gozukmeisni engeller buda guvenlik zafiyetini ortadan kaldirir. -->
+
+    <!-- type kismina password yazdigimiz da ekranda girdigimiz sifreleri kapali veya gozuklemeyecek sekilde girmesini saglar -->
+    <!-- Reset ise isminden anlasildigi gibi girilen value lari resetler -->
+
+    <!-- Hidden kullanicinin bazi gizli bilgilerini sunucuya gonderilmesini saglar ama bunu ekranda gozukmez -->
+</body>
+</html>
