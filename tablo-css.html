@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablolara Css Uygulama</title>
+    <style>
+        .style-table{
+            border: 2px solid black;
+            margin: 10px;
+        }
+        .style-table th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .style-table thead{
+            font-size: 20px;
+        }
+        .style-table th{
+            background-color: red;
+            color: white;
+        }
+        .style-table td{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <table width="60%" cellpadding="0" cellspacing="1" class="style-table">
+        <thead>
+            <tr>
+                <th scope="col">Kanatli Hayvanlar</th>
+                <th scope="col">Yuzen Hayvanlar</th>
+                <th scope="col">Etcil Hayvanlar</th>
+                <th scope="col">Otcul Hayvanlar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Papagean</td>
+                <td>Balina</td>
+                <td>Aslan</td>
+                <td>Inek</td>
+            </tr>
+            <tr>
+                <td>Akbaba</td>
+                <td>Yunus</td>
+                <td>Kaplan</td>
+                <td>Koyun</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
