@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto, Inherit ve Important Komutlari</title>
+    <style>
+        .special{
+            padding: 15px;
+            border: 1px solid black;
+            width: 70%;
+            margin: auto;
+        }
+        .sub-special{
+            margin: inherit;
+            padding: inherit;
+            border: inherit;
+        }
+        /* Inherit anlami su miras almak anlamina geliyor. Mesela parent child iliskisi kuruluyor. */
+    </style>
+</head>
+<body>
+    <div class="special">
+        <p class="sub-special" style="padding: 5px !important;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eum ipsum perferendis numquam. Eum error perferendis animi 
+            consequuntur sapiente perspiciatis eveniet tempore minima distinctio assumenda aperiam autem veritatis incidunt soluta quo 
+            atque temporibus, eligendi doloremque a ipsam suscipit ad beatae?</p>
+            <!-- Important bir verilen value nun baska yerde verilmesine ragmen degistirmeyecektir. -->
+    </div>
+</body>
+</html>
